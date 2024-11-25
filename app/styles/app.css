@@ -117,6 +117,7 @@ aside li {
   pointer-events: auto;
   visibility: visible;
 }
+
 /* reveal aside */
 .overlay.expanded aside {
   transform: translateX(calc(var(--aside-width) * -1));
@@ -128,7 +129,7 @@ button.reset {
   font-size: inherit;
 }
 
-button.reset > * {
+button.reset>* {
   margin: 0;
 }
 
@@ -173,6 +174,7 @@ button.reset:hover:not(:has(> *)) {
 .header-menu-desktop {
   display: none;
   grid-gap: 1rem;
+
   @media (min-width: 45em) {
     display: flex;
     grid-gap: 1rem;
@@ -266,6 +268,7 @@ button.reset:hover:not(:has(> *)) {
   align-items: center;
   display: flex;
 }
+
 /*
 * --------------------------------------------------
 * components/Search
@@ -332,6 +335,7 @@ button.reset:hover:not(:has(> *)) {
 
 .featured-collection-image {
   aspect-ratio: 1 / 1;
+
   @media (min-width: 45em) {
     aspect-ratio: 16 / 9;
   }
@@ -347,6 +351,7 @@ button.reset:hover:not(:has(> *)) {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
+
   @media (min-width: 45em) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -380,6 +385,7 @@ button.reset:hover:not(:has(> *)) {
 .collection-description {
   margin-bottom: 1rem;
   max-width: 95%;
+
   @media (min-width: 45em) {
     max-width: 600px;
   }
@@ -404,6 +410,7 @@ button.reset:hover:not(:has(> *)) {
 */
 .product {
   display: grid;
+
   @media (min-width: 45em) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
@@ -483,4 +490,193 @@ button.reset:hover:not(:has(> *)) {
 
 .account-logout {
   display: inline-block;
+}
+.custum-paddles .slider-container {
+  max-width: 1640px;
+  margin-inline: auto;
+}
+
+
+.custum-paddles .slick-slide {
+  padding-inline: 40px;
+  width: 450px;
+  height: 550px;
+}
+
+.captured-moments-slider-card{
+  border: 3px solid #BBA887;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.custum-paddles .slick-prev {
+  width: 60px;
+  height: 60px;
+  background: url(/app/assets/prevImg.png) no-repeat;
+ 
+
+  background-size: contain;
+  cursor: pointer;
+}
+
+.custum-paddles .slick-prev:before{
+  background: url(/app/assets/prevImg.png) no-repeat;
+
+}
+.slick-next:before {
+  /* content: none; */
+}
+
+.custum-paddles .slick-next:before {
+  /* content: 'hiuh'; */
+  background: url(/app/assets/prevImg.png) no-repeat;
+
+}
+
+.custum-paddles .slick-prev:hover,
+.slick-prev:focus {
+  color: initial;
+  outline: none;
+  background: url(/app/assets/prevImg.png) no-repeat;
+}
+
+.custum-paddles .slick-next {
+  width: 60px;
+  height: 60px;
+  background: url(/app/assets/NextImg.png) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.custum-paddles .slick-next:hover,
+.slick-next:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: initial;
+  outline: none;
+  background: url(/app/assets/NextImg.png) no-repeat;
+}
+
+
+.custum-paddles .slick-list {
+  margin-inline: 30px;
+}
+
+.testimonials .slick-list {
+  margin-inline: 30px;
+}
+
+
+
+.testimonials .slider-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  overflow: hidden;
+  /* Prevent overflow */
+}
+
+.testimonials .slick-slide {
+  padding-inline: 40px;
+  width: 450px;
+  transition: transform 0.5s ease;
+  /* Smooth transition for scaling */
+
+}
+
+
+
+.testimonials .slick-prev {
+  width: 60px;
+  height: 60px;
+  background: url(/app/assets/prevImg.png) no-repeat;
+  background-color: rgb(255, 255, 240);
+
+  background-size: contain;
+  cursor: pointer;
+}
+
+.testimonials .slick-next {
+  width: 60px;
+  height: 60px;
+  background: url(/app/assets/NextImg.png) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+.testimonials .slick-center {
+  transform: scale(1.2);
+  /* Make the center card larger */
+}
+
+.testimonials .slick-center>div {
+
+  background-color: #BBA887;
+  color: white;
+}
+
+.imgx {
+  border-radius: 100%;
+}
+
+.testimonials .slick-initialized .slick-slide {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.testimonials .slick-center .button-read {
+  background-color: white;
+  color: #BBA887;
+}
+
+.testimonials .slick-slide > div{
+border-radius: 20px;
+}
+
+.in{
+  border: none !important;
+  font-size: 24px;
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .in {
+    font-size: 16px;  /* Change font size to 16px on small screens */
+  }
+}
+
+.bannerx {
+  background-color: rgba(0, 0, 0, 0.7); /* Black color with 70% opacity */
+}
+
+.testimonials .swiper-slide-active{
+  scale: 1.2;
+  color: white;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.testimonials .swiper-slide-active > div{
+border-radius: 20px;
+}
+
+.testimonials .swiper-initialized{
+ padding-top: 120px;
+ padding-bottom: 40px;
+}
+
+
+.testimonials .swiper-slide-active {
+  border-radius: 20px;
+} 
+
+.testimonials .swiper-slide-active > div{
+  margin-inline: 20px;
+  background-color: #BBA887;
+
+} 
+
+.testimonials .swiper-slide-active  .test-button{
+  background-color: white ;
+  color: #BBA887;
 }
