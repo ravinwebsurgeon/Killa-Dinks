@@ -16,7 +16,7 @@ function OurWork() {
             <div className="custum-paddles ">
                 <div className="text-center mt-[70px] mb-12">
                     <div className="text-[40px] font-medium text-black">
-                        See Our Wok
+                        See Our Work
                     </div>
                     <div className="text-[25px] text-gray-700 ">
                         Products that Speak for Themselves
