@@ -11,6 +11,9 @@ export default defineConfig({
   //     '~': path.resolve(__dirname, 'src'), // Add this line to map `~` to the `src` folder
   //   },
   // },
+  // resolve: {
+  //   alias: [{find: /^~\/(.*)/, replacement: '/app/$1'}],
+  // },
   plugins: [
     tailwindcss(),
     hydrogen(),
