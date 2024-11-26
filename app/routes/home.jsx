@@ -7,7 +7,7 @@ import MobileCapturedMoments from "~/components/MobileCapturedMoments";
 import NewsLetter from "~/components/NewsLetter";
 import OurWork from "~/components/OurWork";
 import ShopBanner from "~/components/ShopBanner";
-import Testimonials from "~/components/testimonials";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
     return (
