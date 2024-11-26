@@ -26,20 +26,22 @@ export function PageLayout({
       <CartAside cart={cart} />
       <SearchAside />
       <MobileMenuAside header={header} publicStoreDomain={publicStoreDomain} />
-      {false && (
+      {true && (
+        <div className=''>
         <Header
           header={header}
           cart={cart}
           isLoggedIn={isLoggedIn}
           publicStoreDomain={publicStoreDomain}
         />
+          </div>
       )}
       <main>{children}</main>
-      {/* <Footer
+      <Footer
         footer={footer}
         header={header}
         publicStoreDomain={publicStoreDomain}
-      /> */}
+      />
     </Aside.Provider>
   );
 }

@@ -99,6 +99,8 @@ function FeaturedCollection({collection}) {
  * }}
  */
 function RecommendedProducts({products}) {
+
+  console.log("products" , products);
   return (
     <div className="recommended-products">
       <h2>Recommended Products</h2>

@@ -10,10 +10,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
 function CapturedMoments() {
     const swiperRef = useRef(null);
-
   return (
     <div>
           <section className="captured-moments ">

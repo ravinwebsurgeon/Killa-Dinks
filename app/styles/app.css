@@ -680,3 +680,56 @@ border-radius: 20px;
   background-color: white ;
   color: #BBA887;
 }
+
+.mobile-captured-moments .swiper-slide{
+  border-radius: 20px;
+}
+
+.circle{
+  border-radius: 20px
+}
+
+.header-menu-item{
+  color: white !important;
+}
+
+@media (max-width: 640px) {
+  .mobile-header {
+    display: flex;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .bigger-navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .bigger-navbar{
+    display: block;
+  }
+}
+
+.mobile-header .header-ctas {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+}
+
+.mobile-header{
+  background-color: rgba(0, 0, 0, 0.9); /* Black color with 70% opacity */
+}
+
+.header-menu-mobile-toggle h3{
+  color: white;
+  font-size: 24px;
+}
+
+
