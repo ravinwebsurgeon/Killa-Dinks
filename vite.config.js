@@ -6,6 +6,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname, 'src'), // Add this line to map `~` to the `src` folder
+    },
+  },
   plugins: [
     tailwindcss(),
     hydrogen(),
