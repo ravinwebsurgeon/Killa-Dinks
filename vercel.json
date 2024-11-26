@@ -1,6 +1,6 @@
 {
     "build": {
-      "env": {
+         "env": {
         "ENABLE_VC_BUILD": "1"
       }
     }
