@@ -6,7 +6,6 @@ import b4 from "../assets/Badge4.png";
 import b5 from "../assets/Badge5.png";
 import logo from "../assets/logo.png";
 
-
 function Footerx() {
     return (
         <div>
@@ -14,7 +13,7 @@ function Footerx() {
                 <div className="h-[400px] flex-col  bg-[#BBA887] text-white ">
                     <div className="lg:flex lg:flex-row  flex flex-col justify-between lg:mx-[240px] lg:pt-[40px]">
                         <div className="lg:max-w-[320px]">
-                            <img src={logo} alt="" className="py-[10px]" className="mx-auto  lg:mx-0  py-[10px] lg:py-0   " />
+                            <img src={logo} alt="logo" className="mx-auto  lg:mx-0  py-[10px] lg:py-0   " />
                             <div className="text-center lg:text-left py-[10px] px-[10px]">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry standard dummy text
